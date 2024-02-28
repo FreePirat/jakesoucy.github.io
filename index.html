@@ -27,23 +27,71 @@
     <div class="body-no-bar">
         <h1>Hello, My Name Is Jake Soucy And Welcome To My Website</h1>
 
+        <div class="accordion">
+            <h3 id="about">About Me</h3>
+            <div class="description-with-video">
+                <p class="description">
+                    My name is Jake Soucy. I am a student at NBCC for the Game Development Experience class and will soon graduate.
+                    Throughout my years of studying this course, I have also created other projects displayed on this site if you are interested. 
+                    My previous experiences are also posted. 
+                </p>
 
-        <h3 id="about">About Me</h3>
-        <p>
-            My name is Jake Soucy. I am a student at NBCC for the Game Development Experience class and will soon graduate. <br/>
-            Throughout my years of studying this course, I have also created other projects displayed on this site if you are interested. <br/>
-            My previous experiences are also posted. <br/>
-        </p>
-        <h3 id="skills">Skills</h3>
-        <p>
-            Hardworking Sofware Developer with knowledge of various coding languages<br/>
-            Professional and responsible worker<br/>
-            Bilingual (French and English)<br/>
-            Other skills include attention to detail and multitasking<br/>
-            Here's a list of all the programming languages, operating systems and applications I am able to work with as of now.<br/>
-        </p>
-        <h3 id="projects">Projects</h3>
-        <h3 id="contact">Contact Me</h3>
+                <video controls>
+                    <source src="movie.mp4" type="video/mp4">
+                    Your browser does not support mp4 files.
+                </video>
+            </div>
+
+            <h3 id="skills">Skills</h3>
+            <div class="description-lines">
+                <p class="description">
+                    Hardworking Sofware Developer with knowledge of various coding languages
+                    Professional and responsible worker
+                    Bilingual (French and English)
+                    Other skills include attention to detail and multitasking
+                </p>
+                <p class="description">
+                    Here's a list of all the programming languages, operating systems and applications I am able to work with as of now.
+                </p>
+
+                <div class="coding-languages">
+                    <img src="octocat.png" alt="Github Profile">
+                    <img src="octocat.png" alt="Github Profile">
+                    <img src="octocat.png" alt="Github Profile">
+                </div>
+            </div>
+
+            <h3 id="projects">Projects</h3>
+
+            <h3 id="contact">Contact Me</h3>
+        </div>
     </div>
+
+    <script>
+        const accordionItems = document.querySelectorAll('.accordion h3');
+
+        accordionItems.forEach(item => {
+            item.addEventListener('click', function() {
+                const description = this.nextElementSibling;
+                description.classList.toggle('active');
+                this.classList.toggle('active');
+            });
+        });
+
+        const descriptions = document.querySelectorAll('.description');
+
+        descriptions.forEach(description => {
+            const letters = description.textContent.split('');
+            description.textContent = '';
+
+            letters.forEach((letter, index) => {
+                const span = document.createElement('span');
+                span.textContent = letter;
+                span.style.animationDelay = `${index * 10}ms`;
+                description.appendChild(span);
+            });
+        });
+
+    </script>
 </body>
 </html>
