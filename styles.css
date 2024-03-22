@@ -38,19 +38,54 @@ h3 {
     margin-right: 3%; 
 }
 
+.image-container a:hover {
+    filter:invert();
+}
+
 .coding-languages{
-    white-space: nowrap; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
     margin-top: 2%;
-    margin-right: 3%; 
-    text-align: center;
+    margin-right: 3%;
 }
 
 .coding-languages img{
-    display: inline-block;
     margin-right: 10px; 
-    width: 50px; 
-    height: 50px; 
+    margin-bottom: 10px; 
+    width: 75px; 
+    height: 75px;
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
 }
+
+.coding-languages img:hover {
+    opacity: 1; 
+  }
+
+.img-text {
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+  }
+
+  .coding-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .coding-container:hover .img-text {
+    visibility: visible;
+  }
 
 
 .image-container img{
@@ -77,6 +112,11 @@ h3 {
 
 .accordion {
     margin-top: 20px;
+    background-color: #5b7796;
+}
+
+.description-lines{
+    padding-left: 1%;
 }
 
 .accordion h3 {
@@ -101,7 +141,6 @@ h3 {
     display: block;
     padding: 10px 20px;
     margin: 0;
-    background-color: #5b7796;
 }
 
 .accordion .description.active {
@@ -110,16 +149,12 @@ h3 {
 
 .description-with-video {
     display: flex;
-    background-color: #5b7796;
 }
 
-.description-lines {
-    background-color: #5b7796;
-}
 
 .description{
     flex-grow: 1;
-    background-color: #5b7796;
+    white-space: pre-line;
 }
 
 .accordion .description-with-video.active {
@@ -140,6 +175,62 @@ video{
     opacity: 0;
     animation: fadeIn 0.5s ease forwards;
 }
+
+.card-container {
+    width: 100%;
+    overflow-x: auto;
+}
+  
+.scrollable-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    scroll-behavior: smooth;
+}
+  
+.card {
+    width: 300px;
+    margin-right: 20px;
+    padding: 10px;
+    border: 10px solid #00ffb7;
+    background-color: rgb(77, 147, 124);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+  
+.card h2, .card h6 {
+    margin: 5px 0;
+}
+
+.card img {
+    width: 300px;
+    height: 360px;
+}
+
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    align-items: left;
+}
+
+label, input, textarea, button {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #0053c8;
+    color: white;
+  }
+  
+  button:hover {
+    background-color: #001b59;
+  }
 
 @keyframes fadeIn {
     to {
