@@ -259,6 +259,10 @@ button {
         border-radius: 5px;
         align-items: left;
     }
+
+    p{
+        font-size: x-large;
+    }
 }
 
 @media (max-width: 768px) {
