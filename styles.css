@@ -3,12 +3,16 @@ body {
     color: white;
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
-    font-size: x-large;
+    font-size: 18px;
+}
+
+.top-bar{
+    padding: 10px 15px;
 }
 
 .top-bar a {
     color: blue;
-    font-size: x-large;
+    font-size: 1.2em;
     text-decoration: none;
     margin-right: 20px;
 }
@@ -22,20 +26,22 @@ body {
 }
 
 p{
-    font-size: xx-large;
+    font-size: 1.2em;
 }
 h1 {
     text-align: center;
-    margin-top: 40px; 
+    margin-top: 20px;
 }
 
 h3 {
-    font-size: 48px;
+    font-size: 28px;
 }
 
 .image-container {
     white-space: nowrap; 
-    margin-right: 3%; 
+    display: flex;
+    gap: 10px;
+    margin-right: 10px;
 }
 
 .image-container a:hover {
@@ -45,18 +51,15 @@ h3 {
 .coding-languages{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; 
-    margin-top: 2%;
-    margin-right: 3%;
+    justify-content: center;
+    gap: 10px;
 }
 
 .coding-languages img{
-    margin-right: 10px; 
-    margin-bottom: 10px; 
-    width: 75px; 
-    height: 75px;
-    opacity: 0; 
-    transition: opacity 0.5s ease; 
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
 }
 
 .coding-languages img:hover {
@@ -91,8 +94,8 @@ h3 {
 .image-container img{
     display: inline-block;
     margin-right: 10px; 
-    width: 25px; 
-    height: 25px; 
+    width: 30px;
+    height: 30px;
 }
 
 .image-container a {
@@ -105,7 +108,7 @@ h3 {
     justify-content: space-between;
     align-items: center;
     background-color: black;
-    padding: 10px 25px;
+    padding: 10px 15px; 
     width: 100%;
     z-index: 999;
 }
@@ -127,14 +130,14 @@ h3 {
     cursor: pointer;
     position: relative;
 
-    background-image: url('arrow-down.png');
+    background-image: url('images/arrow-down.png');
     background-repeat: no-repeat;
     background-position: right 10px center;
-    background-size: 100px;
+    background-size: 15px;
 }
 
 .accordion h3.active {
-    background-image: url('arrow-up.png');
+    background-image: url('images/arrow-up.png');
 } 
 
 .accordion .description {
@@ -179,6 +182,7 @@ video{
 .card-container {
     width: 100%;
     overflow-x: auto;
+    margin-top: 20px;
 }
   
 .scrollable-wrapper {
@@ -188,8 +192,8 @@ video{
 }
   
 .card {
-    min-width: 300px;
-    margin-right: 20px;
+    min-width: 250px;
+    margin-right: 15px;
     padding: 10px;
     border: 10px solid #00ffb7;
     background-color: rgb(77, 147, 124);
@@ -202,17 +206,16 @@ video{
 }
 
 .card img {
-    width: 300px;
-    height: 150px;
+    width: 100%; 
+    height: auto;
 }
 
 form {
-    max-width: 500px;
+    max-width: 100%;
     margin: 20px auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    align-items: left;
 }
 
 label, input, textarea, button {
@@ -236,4 +239,124 @@ button {
     to {
         opacity: 1;
     }
+}
+
+@media (min-width: 1024px) {
+    /* Increase size of coding languages images */
+    .coding-languages img {
+        width: 75px; /* Make the images bigger */
+        height: 75px; /* Make the images bigger */
+        margin-right: 15px; /* Increase space between icons */
+        margin-bottom: 15px; /* Increase space below icons */
+    }
+
+    /* Centering the "Contact Me" form and reduce width */
+    form {
+        max-width: 50%; /* Make the form 50% less wide */
+        margin: 20px auto; /* Center the form horizontally */
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        align-items: left;
+    }
+}
+
+@media (max-width: 768px) {
+    h3 {
+        font-size: 24px; 
+    }
+
+    p {
+        font-size: 1em; 
+    }
+
+    .top-bar a {
+        font-size: 1em; 
+        margin-right: 15px; 
+    }
+
+    .header {
+        padding: 10px; 
+    }
+
+    .image-container img {
+        width: 25px;  
+        height: 25px;
+    }
+
+    .coding-languages img {
+        width: 50px; 
+        height: 50px;
+    }
+
+    .card {
+        min-width: 200px;
+        margin-right: 10px;
+    }
+
+    .card img {
+        width: 100%; 
+        height: auto;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    video {
+        width: 100%; 
+        height: auto;  
+    }
+
+    .description-with-video {
+        flex-direction: column;
+    }
+
+    .body-no-bar {
+        padding-top: 70px;
+    }
+
+    .accordion h3 {
+        font-size: 24px;
+        padding: 12px;
+    }
+
+    .accordion .description {
+        padding: 12px;
+    }
+
+    .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 600px) {
+    video {
+        width: 100%;
+        height: auto; 
+        margin-left: 0%;
+    }
+
+    .header {
+        flex-direction: column; 
+        align-items: flex-start;
+        padding: 5px 10px;
+        height: auto; 
+    }
+
+    /* Adjust the spacing of links in the top-bar */
+    .top-bar a {
+        margin-right: 10px; /* Reduced margin between links */
+        margin-bottom: 5px; /* Reduce space below each link */
+    }
+
+    /* Adjust the image container */
+    .image-container {
+        visibility: hidden;
+    }
+}
+
+.body-no-bar {
+    padding-top: 100px;  /* Add more space to make sure content is below the fixed header */
 }
