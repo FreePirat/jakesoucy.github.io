@@ -1,6 +1,6 @@
 body {
-    background-color: darkblue;
-    color: white;
+    background-color: #121212;
+    color: #E0E0E0;
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
     font-size: 18px;
@@ -11,14 +11,14 @@ body {
 }
 
 .top-bar a {
-    color: blue;
+    color: #BB86FC;
     font-size: 1.2em;
     text-decoration: none;
     margin-right: 20px;
 }
 
 .top-bar a:hover {
-    color: yellow;
+    color: #03DAC6;
 }
 
 .body-no-bar{
@@ -107,15 +107,17 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
+    background-color: #1F1B24;
     padding: 10px 15px; 
     width: 100%;
     z-index: 999;
+    border-top: 2px solid #BB86FC;
+    border-bottom: 2px solid #BB86FC;
 }
 
 .accordion {
     margin-top: 20px;
-    background-color: #5b7796;
+    background-color: #231a2e;
 }
 
 .description-lines{
@@ -123,7 +125,7 @@ h3 {
 }
 
 .accordion h3 {
-    background-color: #007bff;
+    background-color: #5901bd;
     color: white;
     padding: 10px 20px;
     margin: 0;
@@ -195,8 +197,11 @@ video{
     min-width: 250px;
     margin-right: 15px;
     padding: 10px;
-    border: 10px solid #00ffb7;
-    background-color: rgb(77, 147, 124);
+    background-color: #1F1F1F; /* Dark gray for cards */
+    color: #E0E0E0;
+    border: 1px solid #333333;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     text-align: center;
     transition: transform 0.3s ease;
 }
@@ -226,13 +231,27 @@ label, input, textarea, button {
     box-sizing: border-box;
 }
 
+input, textarea {
+    background-color: #1E1E1E;
+    color: #E0E0E0;
+    border: 1px solid #BB86FC;
+    border-radius: 5px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #757575;
+}
+
 button {
-    background-color: #0053c8;
-    color: white;
+    background-color: #333333;
+    color: #FFFFFF;
+    border: 1px solid #BB86FC;
+    border-radius: 5px;
   }
   
   button:hover {
-    background-color: #001b59;
+    background-color: #BB86FC;
+    color: #121212;
   }
 
 @keyframes fadeIn {
