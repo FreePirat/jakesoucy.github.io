@@ -112,7 +112,7 @@ h3 {
     width: 100%;
     z-index: 999;
     border-top: 2px solid #BB86FC;
-    border-bottom: 2px solid #BB86FC;
+    border-bottom: 2px solid rgb(187, 134, 252);
 }
 
 .accordion {
