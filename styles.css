@@ -194,7 +194,7 @@ video{
 }
   
 .card {
-    min-width: 250px;
+    width: 700px;
     margin-right: 15px;
     padding: 10px;
     background-color: #1F1F1F; /* Dark gray for cards */
@@ -208,6 +208,10 @@ video{
   
 .card h2, .card h6 {
     margin: 5px 0;
+}
+
+.card h6{
+    font-size: large;
 }
 
 .card img {
