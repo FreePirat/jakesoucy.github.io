@@ -24,24 +24,19 @@
     </div>
 </div>
 <div class="body-no-bar">
-    <!--
     <h1>Hello, My Name Is Jake Soucy And Welcome To My Website</h1>
-    -->
     <div class="accordion">
-        <h3 id="about">APRIL FOOLS!!!</h3>
+        <h3 id="about">About Me</h3>
         <div class="description-with-video">
-            <!--
             <p class="description">
                 My name is Jake Soucy. I am graduate at NBCC for the Information Technology Game Development Experience class.
                 Throughout my years of studying this course, I have also created other projects displayed on this site if you are interested. 
                 My previous experiences are also posted.</p>
-            -->
             <video controls autoplay muted>
-                <source src="gotem.mp4" type="video/mp4">
+                <source src="Theme_Tussle_Trailer.mp4" type="video/mp4">
                 Your browser does not support mp4 files.
             </video>
         </div>
-        <!--
         <h3 id="skills">Skills</h3>
         <div class="description-lines">
             <p class="description">
@@ -235,7 +230,6 @@
                     <button type="submit">Send</button>
                   </form>
             </div>
-            -->
         </div>
     </div>
 
@@ -276,17 +270,17 @@
         });
 
         //Makes Lines of Icons
-        //const container = document.querySelector('.coding-languages');
+        const container = document.querySelector('.coding-languages');
 
-        //const numImages = images.length;
-        //const imagesPerRow = 10; 
-        //const imageSize = 50; 
-        //const marginSize = 10; 
+        const numImages = images.length;
+        const imagesPerRow = 10; 
+        const imageSize = 50; 
+        const marginSize = 10; 
 
-        //const numRows = Math.ceil(numImages / imagesPerRow);
-        //const containerHeight = numRows * (imageSize + marginSize);
+        const numRows = Math.ceil(numImages / imagesPerRow);
+        const containerHeight = numRows * (imageSize + marginSize);
 
-        //container.style.height = `${containerHeight}px`;
+        container.style.height = `${containerHeight}px`;
     </script>
 </body>
 </html>
