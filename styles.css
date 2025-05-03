@@ -1,6 +1,6 @@
 body {
-    background-color: #121212;
-    color: #E0E0E0;
+    background-color: #f0f3f8;
+    color: #ffffff;
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
     font-size: 18px;
@@ -68,15 +68,15 @@ h3 {
 
 .img-text {
     visibility: hidden;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
+    background-color: #f0f3f8;
+    color: #000000;
     text-align: center;
     border-radius: 5px;
     padding: 5px 10px;
     position: absolute;
     z-index: 1;
     bottom: 100%;
-    left: 50%;
+    left: 45%;
     transform: translateX(-50%);
     width: max-content;
   }
@@ -107,7 +107,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1F1B24;
+    background-color: #253b68;
     padding: 10px 15px; 
     width: 100%;
     z-index: 999;
@@ -125,7 +125,7 @@ h3 {
 }
 
 .accordion h3 {
-    background-color: #5901bd;
+    background-color: #592397;
     color: white;
     padding: 10px 20px;
     margin: 0;
@@ -154,12 +154,31 @@ h3 {
 
 .description-with-video {
     display: flex;
+    gap: 1rem;
+    margin-left: 1rem;
 }
 
+#contactHere {
+    margin-bottom: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    color: #BB86FC;
+    text-decoration: none;
+}
+
+#contactHere:hover {
+    color: #03DAC6;
+}
 
 .description{
     flex-grow: 1;
     white-space: pre-line;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .accordion .description-with-video.active {
@@ -244,6 +263,10 @@ input, textarea {
 
 input::placeholder, textarea::placeholder {
     color: #757575;
+}
+
+textarea{
+    height: 20%;
 }
 
 button {
