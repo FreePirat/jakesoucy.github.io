@@ -1,294 +1,224 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Free Pirat</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jake Soucy || Software Engineer</title>
+  <meta name="description" content="Portfolio of Jake Soucy — Software Engineer. Projects in C++, JavaScript, SQL, and more. Experience at Fisheries and Oceans Canada and NQX." />
+  <link rel="preload" href="images/linked.png" as="image">
+  <link rel="preload" href="images/octocat.png" as="image">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="header">
-    <div class="top-bar">
-        <a href="#about">About Me</a>
-        <a href="#skills">Skills</a>
+  <header class="site-header">
+    <div class="wrap nav">
+      <div class="brand"><span class="dot" aria-hidden="true"></span> <span>Jake Soucy</span></div>
+      <nav class="navlinks" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
-        <a href="#contact">Contact Me</a>
-    </div>
-
-    <div class="image-container">
-        <a href="https://www.linkedin.com/in/jake-soucy-38b540260/" target="_blank">
-            <img src="images/linked.png" alt="LinkedIn Profile">
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="social" aria-label="Social links">
+        <a href="https://www.linkedin.com/in/jake-soucy-38b540260/" target="_blank" aria-label="LinkedIn">
+          <img src="images/linked.png" alt="LinkedIn" />
         </a>
-        <a href="https://github.com/FreePirat" target="_blank">
-            <img src="images/octocat.png" alt="Github Profile">
+        <a href="https://github.com/FreePirat" target="_blank" aria-label="GitHub">
+          <img src="images/octocat.png" alt="GitHub" />
         </a>
+      </div>
     </div>
-</div>
-<div class="body-no-bar">
-    <h1 style="color: black;">Hello, My Name Is Jake Soucy And Welcome To My Website</h1>
-    <div class="accordion">
-        <h3 id="about">About Me</h3>
-        <div class="description-with-video">
-            <div class="text-container">
-            <p class="description">
-                I am a Software Engineer and recent graduate from NBCC’s Information Technology program, with hands-on experience in developing solutions using modern programming languages and tools. During my contract with Fisheries and Oceans Canada, I demonstrated my programming expertise by creating a GCPedia page using HTML, JavaScript, and CSS, showcasing my ability to build functional and user-friendly web applications.<br/>
+  </header>
 
-                Programming is my passion, and I take pride in creating innovative and efficient solutions. I have worked on various personal projects, including a database that stores character information linked to a C++ game I've developed. These projects reflect my commitment to continually learning and applying new technologies to solve real-world problems.<br/>
-                
-                I am driven by a mindset of continuous improvement—ABC (Always Be Coding). I am eager to contribute to dynamic teams where I can leverage my skills to make a meaningful impact. I’m always looking for new challenges and opportunities to grow as a developer.<br/>
-            
-            </p>
-            <a id="contactHere" href="#contact" class="description">For business-related inquiries, feel free to contact me here!</a>
-            </div>
-
-            <video controls autoplay muted>
-                <source src="Theme_Tussle_Trailer.mp4" type="video/mp4">
-                Your browser does not support mp4 files.
-            </video>
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <span class="eyebrow">Software Engineer • C++ / JS / SQL</span>
+          <h1>Hello! I’m Jake Soucy. I build clean, user‑friendly software and websites.</h1>
+          <p class="lead">From bilingual government pages to game engines and databases, I love creating polished, practical solutions.</p>
+          <div class="cta">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn secondary" href="#contact">Contact Me</a>
+          </div>
         </div>
-        <h3 id="skills">Skills</h3>
-        <div class="description-lines">
-            <p class="description" style="text-align: center;">
-                Hardworking Sofware Developer with knowledge of various coding languages<br>
-                Professional and responsible worker<br>
-                Bilingual (French and English)<br>
-                Other skills include attention to detail and multitasking<br>
-                Here's a list of all the programming languages, operating systems and applications I am able to work with as of now:
-            </p>
-            <br/>
-            <div class="imageAnim">
-                <div class="coding-languages">
-                    <div class="coding-container">
-                        <img src="images/android.png" alt="Android Icon">
-                        <div class="img-text">Android</div>
-                    </div>
-
-                    <div class="coding-container">
-                        <img src="images/ASPNet.png" alt="ASPNet Icon">
-                        <div class="img-text">ASPNet</div>
-                    </div>
-
-                    <div class="coding-container">
-                        <img src="images/CSS.png" alt="CSS Icon">
-                        <div class="img-text">CSS</div>
-                    </div>
-
-                    <div class="coding-container">
-                        <img src="images/CSharp.png" alt="C# Icon">
-                        <div class="img-text">C#</div>
-                    </div>
-
-                        <div class="coding-container">
-                            <img src="images/CPP.png" alt="C++ Icon">
-                            <div class="img-text">C++</div>
-                        </div>
-
-                        <div class="coding-container">
-                            <img src="images/Excel.png" alt="Excel Icon">
-                            <div class="img-text">Excel</div>
-                        </div> 
-
-                        <div class="coding-container">
-                            <img src="images/Figma.png" alt="Figma Icon">
-                            <div class="img-text">Figma</div>
-                        </div>
-
-                        <div class="coding-container">
-                            <img src="images/octocat.png" alt="GitHub Icon">
-                            <div class="img-text">Github</div>
-                        </div>
-
-                        <div class="coding-container">
-                            <img src="images/HTML.png" alt="HTML Icon">
-                            <div class="img-text">HTML</div>
-                        </div>
-
-                        <div class="coding-container">
-                            <img src="images/IntelliJ.png" alt="IntelliJ Icon">
-                            <div class="img-text">IntelliJ</div>
-                        </div>
-
-                        <div class="coding-container">
-                            <img src="images/Java.png" alt="Java Icon">
-                            <div class="img-text">Java</div>
-                        </div>
-
-                        <div class="coding-container">
-                            <img src="images/JavaScript.png" alt="JavaScript Icon">
-                            <div class="img-text">JavaScript</div>
-                        </div>
-
-                        <div class="coding-container">
-                            <img src="images/mysql.png" alt="MySQL Icon">
-                            <div class="img-text">MySQL</div>
-                        </div>    
-
-                        <div class="coding-container">
-                            <img src="images/Outlook.png" alt="Outlook Icon">
-                            <div class="img-text">Outlook</div>
-                        </div>
-
-                        <div class="coding-container">
-                            <img src="images/PaintNET.png" alt="PaintNET Icon">
-                            <div class="img-text">PaintNET</div>
-                        </div> 
-
-                        <div class="coding-container">
-                            <img src="images/PowerPoint.png" alt="PowerPoint Icon">
-                            <div class="img-text">PowerPoint</div>
-                        </div> 
-                        
-                        <div class="coding-container">
-                            <img src="images/SQL.png" alt="SQL Icon">
-                            <div class="img-text">SQL</div>
-                        </div> 
-
-                        <div class="coding-container">
-                            <img src="images/TypeScript.png" alt="TypeScript Icon">
-                            <div class="img-text">TypeScript</div>
-                        </div>     
-
-                        <div class="coding-container">
-                            <img src="images/Unbutu.png" alt="Unbutu Icon">
-                            <div class="img-text">Unbutu</div>
-                        </div>
-                            
-                        <div class="coding-container">
-                            <img src="images/VisualStudio.png" alt="Visual Studio Icon">
-                            <div class="img-text">Visual Studio</div>
-                        </div>    
-                        
-                        <div class="coding-container">
-                            <img src="images/VisualStudioCode.png" alt="Visual Studio Code Icon">
-                            <div class="img-text">Visual Studio Code</div>
-                        </div>
-
-                        <div class="coding-container">
-                            <img src="images/Word.png" alt="MicrosoftWord Icon">
-                            <div class="img-text">Microsoft Word</div>
-                        </div> 
-
-                </div>
-                <br/>
-            </div>
+        <div class="video">
+          <video controls autoplay muted playsinline poster="images/Joystick.png">
+            <source src="Theme_Tussle_Trailer.mp4" type="video/mp4" />
+          </video>
         </div>
+      </div>
+    </section>
 
-        <h3 id="projects">Projects</h3>
-            <div class="description-lines">
-                <div class="card-container">
-                    <div class="scrollable-wrapper">
-                        <div class="card">
-                            <h2>Theme Tussle</h2>
-                            <h6>This Project is a fighting game coded in C++ where you can play as 2 different characters and duke it out!</h6>
-                            <a href="https://github.com/FreePirat/ThemeTussleV2.0">
-                                <img src="images/Joystick.png" alt="ThemeTussle">
-                            </a>
-                        </div>
+    <!-- About -->
+    <section id="about">
+      <div class="wrap about reveal">
+        <h2>About Me</h2>
+        <p>
+          I’m a software engineer and recent NBCC graduate who enjoys turning ideas into working software. I’ve built a bilingual internal site at Fisheries and Oceans Canada using HTML, CSS, and JavaScript, created a custom C++ fighting game engine, and designed SQL-backed tools that make data easy to explore. I love clear UX, tidy code, and collaborating in Git to get applications working.
+        </p>
+      </div>
+    </section>
 
-                        <div class="card">
-                            <h2>Theme Tussle Song List</h2>
-                            <h6>This is a Java-based website. It's a basic Database that can add, delete and edit songs to playlists.</h6>
-                            <a href="https://github.com/FreePirat/ThemeTussleSongList">
-                                <img src="images/Song.png" alt="ThemeTussleSongList">
-                            </a>
-                        </div>
-
-                        <div class="card">
-                            <h2>Theme Tussle Move List Database</h2>
-                            <h6>A viewable Database that allows the user to see all the information on a character's moves</h6>
-                            <a href="https://github.com/FreePirat/ThemeTussleMoveList">
-                                <img src="images/Data.png" alt="ThemeTussleMoveList">
-                            </a>
-                        </div>
-
-                        <div class="card">
-                            <h2>My "Fun With Gambling" Website</h2>
-                            <h6>A website made for gambling. It's simply used for fun and still currently in the works.</h6>
-                            <a href="https://freepirat.github.io/FunWithGambling/">
-                                <img src="images/Gambling.png" alt="FunWithGambling">
-                            </a>
-                        </div>
-
-                        <div class="card">
-                            <h2>About Me Website</h2>
-                            <h6>This very website that was built from the ground up by me</h6>
-                            <a href="https://github.com/FreePirat/jakesoucy.github.io">
-                                <img src="images/Web.png" alt="HTML ICON">
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
+    <!-- Experience -->
+    <section id="experience">
+      <div class="wrap reveal">
+        <h2>Experience</h2>
+        <p class="kicker">Highlights of where I’ve worked.</p>
+        <div class="timeline">
+          <article class="job">
+            <div class="row">
+              <h3>NQX — Sales Representative</h3>
+              <div class="meta">Mar 2025 – Aug 2025 • Moncton, NB</div>
             </div>
-    
-
-            <h3 id="contact">Contact Me</h3>
-            <div class="description-lines">
-                <form action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key" value="74a20f8a-ae66-4a7f-a0ee-477e14078a5d">
-
-                    <label for="name">Your Name:</label>
-                    <input type="text" id="name" name="name" required>
-                
-                    <label for="email">Your Email:</label>
-                    <input type="email" id="email" name="_replyto" required>
-                
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-                
-                    <button type="submit">Send</button>
-                  </form>
+            <ul>
+              <li>Helped customers compare Bell mobile/internet/TV plans and navigate promotions.</li>
+              <li>Ranked top‑3 in sales during my first two months, outperforming tenured agents.</li>
+            </ul>
+          </article>
+          <article class="job">
+            <div class="row">
+              <h3>Fisheries and Oceans Canada — Web Developer</h3>
+              <div class="meta">Feb 2024 – Jul 2024 • Moncton, NB</div>
             </div>
+            <ul>
+              <li>Built and maintained a bilingual GCPedia site with HTML, CSS, and JavaScript.</li>
+              <li>Implemented language toggle, pop‑ups, and accessible team cards.</li>
+            </ul>
+          </article>
+          <article class="job">
+            <div class="row">
+              <h3>Fisheries and Oceans Canada — IT Technician</h3>
+              <div class="meta">Aug 2023 – Dec 2023 • Moncton, NB</div>
+            </div>
+            <ul>
+              <li>Provided technical support, imaging, secure data wiping, and device lifecycle management.</li>
+              <li>Coordinated IT asset shipments to remote employees across provinces.</li>
+            </ul>
+          </article>
+          <article class="job">
+            <div class="row">
+              <h3>Sports Experts — Sales Representative</h3>
+              <div class="meta">Jan 2020 – Jul 2022 • Grand Falls, NB</div>
+            </div>
+            <ul>
+              <li>Delivered customer service and product recommendations while maintaining inventory.</li>
+            </ul>
+          </article>
         </div>
-    </div>
+      </div>
+    </section>
 
-    <script>
-        //Making Accordion Items
-        const accordionItems = document.querySelectorAll('.accordion h3');
+    <!-- Projects -->
+    <section id="projects">
+      <div class="wrap reveal">
+        <h2>Projects</h2>
+        <p class="kicker">A few things I’ve built and maintained.</p>
+        <div class="cards">
+          <article class="card">
+            <img src="images/Joystick.png" alt="Theme Tussle game" />
+            <div class="content">
+              <h3>Theme Tussle — C++ Fighting Game</h3>
+              <p>Custom engine with two playable characters, hitboxes/hurtboxes, and multiplayer.</p>
+            </div>
+            <a class="block" href="https://github.com/FreePirat/ThemeTussleV2.0" target="_blank">View on GitHub</a>
+          </article>
+          <article class="card">
+            <img src="images/Song.png" alt="Song list database" />
+            <div class="content">
+              <h3>Theme Tussle Song List — Java + DB</h3>
+              <p>CRUD playlists with a clean UI. Add, edit, and delete songs with persistence.</p>
+            </div>
+            <a class="block" href="https://github.com/FreePirat/ThemeTussleSongList" target="_blank">View on GitHub</a>
+          </article>
+          <article class="card">
+            <img src="images/Data.png" alt="Move list database" />
+            <div class="content">
+              <h3>Move List Database — C# + SQL</h3>
+              <p>Windows Forms app showing rich character & attack data with images and relations.</p>
+            </div>
+            <a class="block" href="https://github.com/FreePirat/ThemeTussleMoveList" target="_blank">View on GitHub</a>
+          </article>
+          <article class="card">
+            <img src="images/Gambling.png" alt="Fun with Gambling website" />
+            <div class="content">
+              <h3>Fun With Gambling — Web</h3>
+              <p>For-fun gambling mini‑games. In progress and evolving.</p>
+            </div>
+            <a class="block" href="https://freepirat.github.io/FunWithGambling/" target="_blank">Open Website</a>
+          </article>
+        </div>
+      </div>
+    </section>
 
-        accordionItems.forEach(item => {
-            item.addEventListener('click', function() {
-                const description = this.nextElementSibling;
-                description.classList.toggle('active');
-                this.classList.toggle('active');
-            });
-        });
+    <!-- Skills -->
+    <section id="skills">
+      <div class="wrap skills-wrap reveal">
+        <h2>Skills</h2>
+        <p class="kicker">Tools and technologies I use.</p>
+        <div class="skills-grid" aria-label="Skills grid">
+          <div class="skill"><img src="images/android.png" alt="Android"><span>Android</span></div>
+          <div class="skill"><img src="images/ASPNet.png" alt="ASP.NET"><span>ASP.NET</span></div>
+          <div class="skill"><img src="images/CSS.png" alt="CSS"><span>CSS</span></div>
+          <div class="skill"><img src="images/CSharp.png" alt="C#"><span>C#</span></div>
+          <div class="skill"><img src="images/CPP.png" alt="C++"><span>C++</span></div>
+          <div class="skill"><img src="images/Excel.png" alt="Excel"><span>Excel</span></div>
+          <div class="skill"><img src="images/Figma.png" alt="Figma"><span>Figma</span></div>
+          <div class="skill"><img src="images/octocat.png" alt="GitHub"><span>GitHub</span></div>
+          <div class="skill"><img src="images/HTML.png" alt="HTML"><span>HTML</span></div>
+          <div class="skill"><img src="images/IntelliJ.png" alt="IntelliJ"><span>IntelliJ</span></div>
+          <div class="skill"><img src="images/Java.png" alt="Java"><span>Java</span></div>
+          <div class="skill"><img src="images/JavaScript.png" alt="JavaScript"><span>JavaScript</span></div>
+          <div class="skill"><img src="images/mysql.png" alt="MySQL"><span>MySQL</span></div>
+          <div class="skill"><img src="images/Outlook.png" alt="Outlook"><span>Outlook</span></div>
+          <div class="skill"><img src="images/PaintNET.png" alt="Paint.NET"><span>Paint.NET</span></div>
+          <div class="skill"><img src="images/PowerPoint.png" alt="PowerPoint"><span>PowerPoint</span></div>
+          <div class="skill"><img src="images/SQL.png" alt="SQL"><span>SQL</span></div>
+          <div class="skill"><img src="images/TypeScript.png" alt="TypeScript"><span>TypeScript</span></div>
+          <div class="skill"><img src="images/Unbutu.png" alt="Ubuntu"><span>Ubuntu</span></div>
+          <div class="skill"><img src="images/VisualStudio.png" alt="Visual Studio"><span>Visual Studio</span></div>
+          <div class="skill"><img src="images/VisualStudioCode.png" alt="VS Code"><span>VS Code</span></div>
+          <div class="skill"><img src="images/Word.png" alt="Word"><span>Word</span></div>
+        </div>
+      </div>
+    </section>
 
-        //Type in Letter by Letter
-        const descriptions = document.querySelectorAll('.description');
+    <!-- Contact -->
+    <section id="contact">
+      <div class="wrap contact reveal">
+        <div class="contact-card">
+          <h2>Let’s work together</h2>
+          <p class="kicker">Open to software engineering roles, web dev, and game tooling.</p>
+          <p><strong>Email:</strong> <a href="mailto:Jakennik01@gmail.com">Jakennik01@gmail.com</a></p>
+          <p><strong>Based in:</strong> Dieppe / Moncton, NB, Canada</p>
+        </div>
+        <form action="https://api.web3forms.com/submit" method="POST" aria-label="Contact form">
+          <input type="hidden" name="access_key" value="74a20f8a-ae66-4a7f-a0ee-477e14078a5d" />
+          <label for="name">Your Name</label>
+          <input id="name" name="name" type="text" required />
+          <label for="email">Your Email</label>
+          <input id="email" name="_replyto" type="email" required />
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
 
-        descriptions.forEach(description => {
-            const letters = description.textContent.split('');
-            description.textContent = '';
+  <footer>
+    <div class="wrap">© <span id="y"></span> Jake Soucy. Built with clean HTML/CSS/JS.</div>
+  </footer>
 
-            letters.forEach((letter, index) => {
-                const span = document.createElement('span');
-                span.textContent = letter;
-                span.style.animationDelay = `${index * 10}ms`;
-                description.appendChild(span);
-            });
-        });
-
-        //Print in Icon by Icon
-        const images = document.querySelectorAll(".coding-languages img");
-
-        images.forEach((image, index) => {
-        setTimeout(() => {
-            image.style.opacity = 1;
-        }, index * 100); 
-        });
-
-        //Makes Lines of Icons
-        const container = document.querySelector('.coding-languages');
-
-        const numImages = images.length;
-        const imagesPerRow = 10; 
-        const imageSize = 50; 
-        const marginSize = 10; 
-
-        const numRows = Math.ceil(numImages / imagesPerRow);
-        const containerHeight = numRows * (imageSize + marginSize);
-
-        container.style.height = `${containerHeight}px`;
-    </script>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    const els = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+    },{threshold:.15});
+    els.forEach(el=>io.observe(el));
+  </script>
 </body>
 </html>
