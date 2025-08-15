@@ -15,8 +15,10 @@
   --panel: #f5f6fa;
   --muted: #555;
   --text: #111;
+  --brand: #6200ee;
+  --brand-2: #03DAC6;
   --line: #ddd;
-  --shadow: 0 4px 20px rgba(0, 0, 0, .08);
+  --shadow: 0 4px 20px rgba(0,0,0,0.08);
 }
 
 * {
@@ -407,6 +409,7 @@ footer {
   color: var(--muted);
 }
 
+/* Responsive */
 @media (max-width: 960px) {
   .hero-grid {
     grid-template-columns: 1fr;
@@ -444,6 +447,7 @@ footer {
   }
 }
 
+/* Reveal animations */
 .reveal {
   opacity: 0;
   transform: translateY(10px);
@@ -465,4 +469,61 @@ footer {
   body {
     scroll-behavior: auto;
   }
+}
+
+/* ==== Light mode overrides ==== */
+body.light {
+  background: var(--bg);
+  color: var(--text);
+}
+
+body.light section,
+body.light .panel,
+body.light .card,
+body.light .contact-card,
+body.light .job,
+body.light form {
+  background: var(--panel);
+  color: var(--text);
+  border-color: var(--line);
+  box-shadow: var(--shadow);
+}
+
+body.light input,
+body.light textarea,
+body.light select,
+body.light button {
+  background-color: #fff;
+  color: var(--text);
+  border-color: var(--line);
+}
+
+body.light .btn {
+  background: linear-gradient(135deg, var(--brand), var(--brand-2));
+  color: #fff;
+  border: 1px solid var(--brand);
+}
+
+body.light .btn.secondary {
+  background: #fff;
+  color: var(--text);
+  border-color: var(--line);
+}
+
+body.light a {
+  color: var(--brand);
+}
+body.light a:hover {
+  color: var(--brand-2);
+}
+
+body.light .eyebrow {
+  background: #eee;
+  color: var(--muted);
+  border-color: var(--line);
+}
+
+body.light .video {
+  border: 1px solid var(--line);
+  background: #000;
 }
