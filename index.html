@@ -4,21 +4,36 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jake Soucy || Software Engineer</title>
-  <meta name="description" content="Portfolio of Jake Soucy — Software Engineer. Projects in C++, JavaScript, SQL, and more. Experience at Fisheries and Oceans Canada and NQX." />
-  <link rel="preload" href="images/linked.png" as="image">
-  <link rel="preload" href="images/octocat.png" as="image">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    body.light-mode {
+      background-color: #ffffff;
+      color: #111111;
+    }
+    body.light-mode a {
+      color: #0077cc;
+    }
+    .toggles {
+      display: flex;
+      gap: 10px;
+      margin-left: 20px;
+    }
+    .toggles button {
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
     <div class="wrap nav">
       <div class="brand"><span class="dot" aria-hidden="true"></span> <span>Jake Soucy</span></div>
       <nav class="navlinks" aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+        <a href="#about" data-en="About" data-fr="À propos"></a>
+        <a href="#experience" data-en="Experience" data-fr="Expérience"></a>
+        <a href="#projects" data-en="Projects" data-fr="Projets"></a>
+        <a href="#skills" data-en="Skills" data-fr="Compétences"></a>
+        <a href="#contact" data-en="Contact" data-fr="Contact"></a>
       </nav>
       <div class="social" aria-label="Social links">
         <a href="https://www.linkedin.com/in/jake-soucy-38b540260/" target="_blank" aria-label="LinkedIn">
@@ -28,6 +43,10 @@
           <img src="images/octocat.png" alt="GitHub" />
         </a>
       </div>
+      <div class="toggles">
+        <button id="langToggle">FR</button>
+        <button id="modeToggle">Light</button>
+      </div>
     </div>
   </header>
 
@@ -36,12 +55,12 @@
     <section class="hero">
       <div class="wrap hero-grid">
         <div>
-          <span class="eyebrow">Software Engineer • C++ / JS / SQL</span>
-          <h1>Hello! I’m Jake Soucy. I build clean, user‑friendly software and websites.</h1>
-          <p class="lead">From bilingual government pages to game engines and databases, I love creating polished, practical solutions.</p>
+          <span class="eyebrow" data-en="Software Engineer • C++ / JS / SQL" data-fr="Ingénieur Logiciel • C++ / JS / SQL"></span>
+          <h1 data-en="Hello! I’m Jake Soucy. I build clean, user‑friendly software and websites." data-fr="Bonjour ! Je suis Jake Soucy. Je crée des logiciels et sites web propres et conviviaux."></h1>
+          <p class="lead" data-en="From bilingual government pages to game engines and databases, I love creating polished, practical solutions." data-fr="Des pages gouvernementales bilingues aux moteurs de jeu et bases de données, j’aime créer des solutions pratiques et soignées."></p>
           <div class="cta">
-            <a class="btn" href="#projects">View Projects</a>
-            <a class="btn secondary" href="#contact">Contact Me</a>
+            <a class="btn" href="#projects" data-en="View Projects" data-fr="Voir Projets"></a>
+            <a class="btn secondary" href="#contact" data-en="Contact Me" data-fr="Me Contacter"></a>
           </div>
         </div>
         <div class="video">
@@ -55,56 +74,55 @@
     <!-- About -->
     <section id="about">
       <div class="wrap about reveal">
-        <h2>About Me</h2>
-        <p>
-          I’m a software engineer and recent NBCC graduate who enjoys turning ideas into working software. I’ve built a bilingual internal site at Fisheries and Oceans Canada using HTML, CSS, and JavaScript, created a custom C++ fighting game engine, and designed SQL-backed tools that make data easy to explore. I love clear UX, tidy code, and collaborating in Git to get applications working.
-        </p>
+        <h2 data-en="About Me" data-fr="À propos de moi"></h2>
+        <p data-en="I’m a software engineer and recent NBCC graduate who enjoys turning ideas into working software. I’ve built a bilingual internal site at Fisheries and Oceans Canada using HTML, CSS, and JavaScript, created a custom C++ fighting game engine, and designed SQL-backed tools that make data easy to explore. I love clear UX, tidy code, and collaborating in Git to get applications working."
+           data-fr="Je suis un ingénieur logiciel et récent diplômé du NBCC qui aime transformer les idées en logiciels fonctionnels. J’ai construit un site interne bilingue aux Pêches et Océans Canada avec HTML, CSS et JavaScript, créé un moteur de jeu C++ personnalisé, et conçu des outils SQL qui facilitent l’exploration des données. J’adore l’UX claire, le code propre et collaborer sur Git pour faire fonctionner les applications."></p>
       </div>
     </section>
 
     <!-- Experience -->
     <section id="experience">
       <div class="wrap reveal">
-        <h2>Experience</h2>
-        <p class="kicker">Highlights of where I’ve worked.</p>
+        <h2 data-en="Experience" data-fr="Expérience"></h2>
+        <p class="kicker" data-en="Highlights of where I’ve worked." data-fr="Quelques points forts de mon expérience professionnelle."></p>
         <div class="timeline">
           <article class="job">
             <div class="row">
-              <h3>NQX — Sales Representative</h3>
+              <h3 data-en="NQX — Sales Representative" data-fr="NQX — Représentant des ventes"></h3>
               <div class="meta">Mar 2025 – Aug 2025 • Moncton, NB</div>
             </div>
             <ul>
-              <li>Helped customers compare Bell mobile/internet/TV plans and navigate promotions.</li>
-              <li>Ranked top‑3 in sales during my first two months, outperforming tenured agents.</li>
+              <li data-en="Helped customers compare Bell mobile/internet/TV plans and navigate promotions." data-fr="Aidé les clients à comparer les forfaits mobiles/internet/TV de Bell et à naviguer dans les promotions."></li>
+              <li data-en="Ranked top‑3 in sales during my first two months, outperforming tenured agents." data-fr="Classé parmi les 3 meilleurs vendeurs pendant mes deux premiers mois, surpassant des agents expérimentés."></li>
             </ul>
           </article>
           <article class="job">
             <div class="row">
-              <h3>Fisheries and Oceans Canada — Web Developer</h3>
+              <h3 data-en="Fisheries and Oceans Canada — Web Developer" data-fr="Pêches et Océans Canada — Développeur Web"></h3>
               <div class="meta">Feb 2024 – Jul 2024 • Moncton, NB</div>
             </div>
             <ul>
-              <li>Built and maintained a bilingual GCPedia site with HTML, CSS, and JavaScript.</li>
-              <li>Implemented language toggle, pop‑ups, and accessible team cards.</li>
+              <li data-en="Built and maintained a bilingual GCPedia site with HTML, CSS, and JavaScript." data-fr="Création et maintenance d’un site GCPedia bilingue avec HTML, CSS et JavaScript."></li>
+              <li data-en="Implemented language toggle, pop‑ups, and accessible team cards." data-fr="Mise en œuvre du changement de langue, des pop-ups et des cartes d’équipe accessibles."></li>
             </ul>
           </article>
           <article class="job">
             <div class="row">
-              <h3>Fisheries and Oceans Canada — IT Technician</h3>
+              <h3 data-en="Fisheries and Oceans Canada — IT Technician" data-fr="Pêches et Océans Canada — Technicien IT"></h3>
               <div class="meta">Aug 2023 – Dec 2023 • Moncton, NB</div>
             </div>
             <ul>
-              <li>Provided technical support, imaging, secure data wiping, and device lifecycle management.</li>
-              <li>Coordinated IT asset shipments to remote employees across provinces.</li>
+              <li data-en="Provided technical support, imaging, secure data wiping, and device lifecycle management." data-fr="Assistance technique, imagerie, effacement sécurisé des données et gestion du cycle de vie des appareils."></li>
+              <li data-en="Coordinated IT asset shipments to remote employees across provinces." data-fr="Coordination de l’expédition du matériel informatique aux employés éloignés dans les provinces."></li>
             </ul>
           </article>
           <article class="job">
             <div class="row">
-              <h3>Sports Experts — Sales Representative</h3>
+              <h3 data-en="Sports Experts — Sales Representative" data-fr="Sports Experts — Représentant des ventes"></h3>
               <div class="meta">Jan 2020 – Jul 2022 • Grand Falls, NB</div>
             </div>
             <ul>
-              <li>Delivered customer service and product recommendations while maintaining inventory.</li>
+              <li data-en="Delivered customer service and product recommendations while maintaining inventory." data-fr="Fourniture du service client et recommandations de produits tout en maintenant l’inventaire."></li>
             </ul>
           </article>
         </div>
@@ -114,40 +132,40 @@
     <!-- Projects -->
     <section id="projects">
       <div class="wrap reveal">
-        <h2>Projects</h2>
-        <p class="kicker">A few things I’ve built and maintained.</p>
+        <h2 data-en="Projects" data-fr="Projets"></h2>
+        <p class="kicker" data-en="A few things I’ve built and maintained." data-fr="Quelques projets que j’ai créés et maintenus."></p>
         <div class="cards">
           <article class="card">
             <img src="images/Joystick.png" alt="Theme Tussle game" />
             <div class="content">
-              <h3>Theme Tussle — C++ Fighting Game</h3>
-              <p>Custom engine with two playable characters, hitboxes/hurtboxes, and multiplayer.</p>
+              <h3 data-en="Theme Tussle — C++ Fighting Game" data-fr="Theme Tussle — Jeu de combat en C++"></h3>
+              <p data-en="Custom engine with two playable characters, hitboxes/hurtboxes, and multiplayer." data-fr="Moteur personnalisé avec deux personnages jouables, hitboxes/hurtboxes et multijoueur."></p>
             </div>
-            <a class="block" href="https://github.com/FreePirat/ThemeTussleV2.0" target="_blank">View on GitHub</a>
+            <a class="block" href="https://github.com/FreePirat/ThemeTussleV2.0" target="_blank" data-en="View on GitHub" data-fr="Voir sur GitHub"></a>
           </article>
           <article class="card">
             <img src="images/Song.png" alt="Song list database" />
             <div class="content">
-              <h3>Theme Tussle Song List — Java + DB</h3>
-              <p>CRUD playlists with a clean UI. Add, edit, and delete songs with persistence.</p>
+              <h3 data-en="Theme Tussle Song List — Java + DB" data-fr="Liste de chansons Theme Tussle — Java + BD"></h3>
+              <p data-en="CRUD playlists with a clean UI. Add, edit, and delete songs with persistence." data-fr="CRUD de playlists avec une interface propre. Ajouter, modifier et supprimer des chansons avec persistance."></p>
             </div>
-            <a class="block" href="https://github.com/FreePirat/ThemeTussleSongList" target="_blank">View on GitHub</a>
+            <a class="block" href="https://github.com/FreePirat/ThemeTussleSongList" target="_blank" data-en="View on GitHub" data-fr="Voir sur GitHub"></a>
           </article>
           <article class="card">
             <img src="images/Data.png" alt="Move list database" />
             <div class="content">
-              <h3>Move List Database — C# + SQL</h3>
-              <p>Windows Forms app showing rich character & attack data with images and relations.</p>
+              <h3 data-en="Move List Database — C# + SQL" data-fr="Base de données Move List — C# + SQL"></h3>
+              <p data-en="Windows Forms app showing rich character & attack data with images and relations." data-fr="Application Windows Forms affichant des données détaillées sur les personnages et attaques avec images et relations."></p>
             </div>
-            <a class="block" href="https://github.com/FreePirat/ThemeTussleMoveList" target="_blank">View on GitHub</a>
+            <a class="block" href="https://github.com/FreePirat/ThemeTussleMoveList" target="_blank" data-en="View on GitHub" data-fr="Voir sur GitHub"></a>
           </article>
           <article class="card">
             <img src="images/Gambling.png" alt="Fun with Gambling website" />
             <div class="content">
-              <h3>Fun With Gambling — Web</h3>
-              <p>For-fun gambling mini‑games. In progress and evolving.</p>
+              <h3 data-en="Fun With Gambling — Web" data-fr="Fun With Gambling — Web"></h3>
+              <p data-en="For-fun gambling mini‑games. In progress and evolving." data-fr="Mini-jeux de hasard pour le plaisir. En cours de développement."></p>
             </div>
-            <a class="block" href="https://freepirat.github.io/FunWithGambling/" target="_blank">Open Website</a>
+            <a class="block" href="https://freepirat.github.io/FunWithGambling/" target="_blank" data-en="Open Website" data-fr="Ouvrir le site"></a>
           </article>
         </div>
       </div>
@@ -156,8 +174,8 @@
     <!-- Skills -->
     <section id="skills">
       <div class="wrap skills-wrap reveal">
-        <h2>Skills</h2>
-        <p class="kicker">Tools and technologies I use.</p>
+        <h2 data-en="Skills" data-fr="Compétences"></h2>
+        <p class="kicker" data-en="Tools and technologies I use." data-fr="Outils et technologies que j’utilise."></p>
         <div class="skills-grid" aria-label="Skills grid">
           <div class="skill"><img src="images/android.png" alt="Android"><span>Android</span></div>
           <div class="skill"><img src="images/ASPNet.png" alt="ASP.NET"><span>ASP.NET</span></div>
@@ -189,20 +207,20 @@
     <section id="contact">
       <div class="wrap contact reveal">
         <div class="contact-card">
-          <h2>Let’s work together</h2>
-          <p class="kicker">Open to software engineering roles, web dev, and game tooling.</p>
-          <p><strong>Email:</strong> <a href="mailto:Jakennik01@gmail.com">Jakennik01@gmail.com</a></p>
-          <p><strong>Based in:</strong> Dieppe / Moncton, NB, Canada</p>
+          <h2 data-en="Let’s work together" data-fr="Travaillons ensemble"></h2>
+          <p class="kicker" data-en="Open to software engineering roles, web dev, and game tooling." data-fr="Ouvert aux postes d’ingénieur logiciel, développement web et outils de jeu."></p>
+          <p><strong data-en="Email:" data-fr="Email :"></strong> <a href="mailto:Jakennik01@gmail.com">Jakennik01@gmail.com</a></p>
+          <p><strong data-en="Based in:" data-fr="Basé à :"></strong> Dieppe / Moncton, NB, Canada</p>
         </div>
         <form action="https://api.web3forms.com/submit" method="POST" aria-label="Contact form">
           <input type="hidden" name="access_key" value="74a20f8a-ae66-4a7f-a0ee-477e14078a5d" />
-          <label for="name">Your Name</label>
+          <label for="name" data-en="Your Name" data-fr="Votre nom"></label>
           <input id="name" name="name" type="text" required />
-          <label for="email">Your Email</label>
+          <label for="email" data-en="Your Email" data-fr="Votre email"></label>
           <input id="email" name="_replyto" type="email" required />
-          <label for="message">Message</label>
+          <label for="message" data-en="Message" data-fr="Message"></label>
           <textarea id="message" name="message" required></textarea>
-          <button type="submit">Send Message</button>
+          <button type="submit" data-en="Send Message" data-fr="Envoyer"></button>
         </form>
       </div>
     </section>
@@ -214,11 +232,40 @@
 
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
+
+    // Intersection Observer for reveal
     const els = document.querySelectorAll('.reveal');
     const io = new IntersectionObserver((entries)=>{
-      entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
-    },{threshold:.15});
+      entries.forEach(e=>{
+        if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, {threshold:.15});
     els.forEach(el=>io.observe(el));
+
+    // Language toggle
+    let isFrench = false;
+    const langBtn = document.getElementById('langToggle');
+    langBtn.addEventListener('click', () => {
+      isFrench = !isFrench;
+      langBtn.textContent = isFrench ? 'EN' : 'FR';
+      document.querySelectorAll('[data-en]').forEach(el=>{
+        el.textContent = isFrench ? el.dataset.fr : el.dataset.en;
+      });
+    });
+
+    // Initialize default text from data-en
+    document.querySelectorAll('[data-en]').forEach(el=>{
+      el.textContent = el.dataset.en;
+    });
+
+    // Light mode toggle
+    let lightMode = false;
+    const modeBtn = document.getElementById('modeToggle');
+    modeBtn.addEventListener('click', () => {
+      lightMode = !lightMode;
+      document.body.classList.toggle('light-mode', lightMode);
+      modeBtn.textContent = lightMode ? 'Dark' : 'Light';
+    });
   </script>
 </body>
 </html>
