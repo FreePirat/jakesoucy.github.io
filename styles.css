@@ -477,6 +477,30 @@ footer {
   display: block;
 }
 
+/* Blog Styles */
+.blog-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0 0;
+}
+.blog-list li {
+  margin-bottom: 1.2rem;
+  font-size: 1.08em;
+}
+.blog-list a {
+  color: var(--brand);
+  text-decoration: none;
+}
+.blog-list a:hover {
+  text-decoration: underline;
+  color: var(--brand-2);
+}
+.blog-list span {
+  color: var(--muted);
+  margin-left: 0.5em;
+  font-size: 0.95em;
+}
+
 /* Responsive */
 @media (max-width: 960px) {
   .hero-grid {
