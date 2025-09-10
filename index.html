@@ -5,24 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jake Soucy || Software Engineer</title>
   <link rel="stylesheet" href="styles.css">
-  <style>
-    body.light-mode {
-      background-color: #ffffff;
-      color: #111111;
-    }
-    body.light-mode a {
-      color: #0077cc;
-    }
-    .toggles {
-      display: flex;
-      gap: 10px;
-      margin-left: 20px;
-    }
-    .toggles button {
-      padding: 5px 10px;
-      cursor: pointer;
-    }
-  </style>
 </head>
 <body>
   <header class="site-header">
@@ -45,7 +27,6 @@
       </div>
       <div class="toggles">
         <button id="langToggle">FR</button>
-        <!--<button id="modeToggle">Light</button>-->
       </div>
     </div>
   </header>
@@ -64,7 +45,7 @@
           </div>
         </div>
         <div class="video">
-          <video controls autoplay muted playsinline poster="images/Joystick.png">
+          <video controls autoplay muted playsinline poster="images/ThemeTussleDemo.jpg">
             <source src="Theme_Tussle_Trailer.mp4" type="video/mp4" />
           </video>
         </div>
@@ -135,35 +116,49 @@
         <h2 data-en="Projects" data-fr="Projets"></h2>
         <p class="kicker" data-en="A few things I’ve built and maintained." data-fr="Quelques projets que j’ai créés et maintenus."></p>
         <div class="cards">
+          <!-- Theme Tussle Fighting Game -->
           <article class="card">
-            <img src="images/ThemeTussleDemo.jpg" alt="Theme Tussle game" />
+            <video controls poster="images/ThemeTussleDemo.jpg" style="width:100%;border-radius:8px;">
+              <source src="Theme_Tussle_Trailer.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
             <div class="content">
               <h3 data-en="Theme Tussle — C++ Fighting Game" data-fr="Theme Tussle — Jeu de combat en C++"></h3>
               <p data-en="Custom engine with two playable characters, hitboxes/hurtboxes, and multiplayer." data-fr="Moteur personnalisé avec deux personnages jouables, hitboxes/hurtboxes et multijoueur."></p>
             </div>
             <a class="block" href="https://github.com/FreePirat/ThemeTussleV2.0" target="_blank" data-en="View on GitHub" data-fr="Voir sur GitHub"></a>
           </article>
+          <!-- RPG Demo -->
           <article class="card">
-            <img src="images/Song.png" alt="Song list database" />
+            <video controls poster="images/RPGDemo.jpg" style="width:100%;border-radius:8px;">
+              <source src="RPG_Demo.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
             <div class="content">
-              <h3 data-en="Theme Tussle Song List — Java + DB" data-fr="Liste de chansons Theme Tussle — Java + BD"></h3>
-              <p data-en="CRUD playlists with a clean UI. Add, edit, and delete songs with persistence." data-fr="CRUD de playlists avec une interface propre. Ajouter, modifier et supprimer des chansons avec persistance."></p>
+              <h3 data-en="RPG Project (Ascension) — Java, Unity, Team Management" data-fr="Projet RPG (Ascension) — Java, Unity, Management D'equipe"></h3>
+              <p data-en="A work-in-progress RPG built by a team I'm currently leading. Demo video below." data-fr="Un RPG en cours avec des mécaniques et une interface personnalisées. Démo ci-dessous."></p>
             </div>
-            <a class="block" href="https://github.com/FreePirat/ThemeTussleSongList" target="_blank" data-en="View on GitHub" data-fr="Voir sur GitHub"></a>
+            <a class="block" href="https://github.com/FreePirat/RPGProject" target="_blank" data-en="View on GitHub" data-fr="Voir sur GitHub"></a>
           </article>
+          <!-- Move List Database -->
           <article class="card">
-            <img src="images/ThemeTussleMoveDemo.jpg" alt="Move list database" />
+            <video controls poster="images/ThemeTussleMoveDemo.jpg" style="width:100%;border-radius:8px;">
+              <source src="MoveList_Demo.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
             <div class="content">
               <h3 data-en="Move List Database — C# + SQL" data-fr="Base de données Move List — C# + SQL"></h3>
-              <p data-en="Windows Forms app showing rich character & attack data with images and relations." data-fr="Application Windows Forms affichant des données détaillées sur les personnages et attaques avec images et relations."></p>
+              <p data-en="Windows Forms app showing rich character & attack data with images and relations. Demo below." data-fr="Application Windows Forms affichant des données détaillées sur les personnages et attaques avec images et relations. Démo ci-dessous."></p>
             </div>
             <a class="block" href="https://github.com/FreePirat/ThemeTussleMoveList" target="_blank" data-en="View on GitHub" data-fr="Voir sur GitHub"></a>
           </article>
+          <!-- Fun With Gambling Live Preview -->
           <article class="card">
-            <img src="images/FunWithGamblingDemo.jpg" alt="Fun with Gambling website" />
             <div class="content">
-              <h3 data-en="Fun With Gambling — Web" data-fr="Fun With Gambling — Web"></h3>
-              <p data-en="For-fun gambling mini‑games. In progress and evolving." data-fr="Mini-jeux de hasard pour le plaisir. En cours de développement."></p>
+              <h3 data-en="Fun With Gambling — HTML, CSS, JavaScript" data-fr="Fun With Gambling — HTML, CSS, JavaScript"></h3>
+              <div class="live-preview">
+                <iframe src="https://freepirat.github.io/FunWithGambling/" title="Fun With Gambling Live Preview" loading="lazy"></iframe>
+              </div>
             </div>
             <a class="block" href="https://freepirat.github.io/FunWithGambling/" target="_blank" data-en="Open Website" data-fr="Ouvrir le site"></a>
           </article>
@@ -174,26 +169,65 @@
     <!-- Skills -->
     <section id="skills">
       <div class="wrap skills-wrap reveal">
+
+        <!-- Featured Skills -->
+        <div class="featured-skills">
+          <h2 data-en="Featured Skills" data-fr="Compétences principales"></h2>
+          <div class="featured-list">
+            <div class="featured-skill">
+              <img src="images/CPP.png" alt="C++">
+              <span>C++</span>
+              <span class="badge" data-en="Intermediate" data-fr="Intermédiaire"></span>
+              <div class="bar"><div class="fill" style="width: 75%"></div></div>
+            </div>
+            <div class="featured-skill">
+              <img src="images/JavaScript.png" alt="JavaScript">
+              <span>JavaScript</span>
+              <span class="badge" data-en="Advanced" data-fr="Avancé"></span>
+              <div class="bar"><div class="fill" style="width: 85%"></div></div>
+            </div>
+            <div class="featured-skill">
+              <img src="images/SQL.png" alt="SQL">
+              <span>SQL</span>
+              <span class="badge" data-en="Advanced" data-fr="Avancé"></span>
+              <div class="bar"><div class="fill" style="width: 90%"></div></div>
+            </div>
+            <div class="featured-skill">
+              <img src="images/HTML.png" alt="HTML">
+              <span>HTML/CSS</span>
+              <span class="badge" data-en="Advanced" data-fr="Avancé"></span>
+              <div class="bar"><div class="fill" style="width: 90%"></div></div>
+            </div>
+            <div class="featured-skill">
+              <img src="images/android.png" alt="Android">
+              <span>Android</span>
+              <span class="badge" data-en="Intermediate" data-fr="Intermédiaire"></span>
+              <div class="bar"><div class="fill" style="width: 70%"></div></div>
+            </div>
+            <div class="featured-skill">
+              <img src="images/android.png" alt="Android">
+              <span>Python</span>
+              <span class="badge" data-en="Intermediate" data-fr="Intermédiaire"></span>
+              <div class="bar"><div class="fill" style="width: 70%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Other Skills Grid -->
         <h2 data-en="Skills" data-fr="Compétences"></h2>
-        <p class="kicker" data-en="Tools and technologies I use." data-fr="Outils et technologies que j’utilise."></p>
+        <p class="kicker" data-en="Other tools and technologies I use." data-fr="Auter outils et technologies que j’utilise."></p>
         <div class="skills-grid" aria-label="Skills grid">
-          <div class="skill"><img src="images/android.png" alt="Android"><span>Android</span></div>
           <div class="skill"><img src="images/ASPNet.png" alt="ASP.NET"><span>ASP.NET</span></div>
-          <div class="skill"><img src="images/CSS.png" alt="CSS"><span>CSS</span></div>
           <div class="skill"><img src="images/CSharp.png" alt="C#"><span>C#</span></div>
-          <div class="skill"><img src="images/CPP.png" alt="C++"><span>C++</span></div>
           <div class="skill"><img src="images/Excel.png" alt="Excel"><span>Excel</span></div>
           <div class="skill"><img src="images/Figma.png" alt="Figma"><span>Figma</span></div>
           <div class="skill"><img src="images/octocat.png" alt="GitHub"><span>GitHub</span></div>
-          <div class="skill"><img src="images/HTML.png" alt="HTML"><span>HTML</span></div>
           <div class="skill"><img src="images/IntelliJ.png" alt="IntelliJ"><span>IntelliJ</span></div>
           <div class="skill"><img src="images/Java.png" alt="Java"><span>Java</span></div>
-          <div class="skill"><img src="images/JavaScript.png" alt="JavaScript"><span>JavaScript</span></div>
           <div class="skill"><img src="images/mysql.png" alt="MySQL"><span>MySQL</span></div>
           <div class="skill"><img src="images/Outlook.png" alt="Outlook"><span>Outlook</span></div>
           <div class="skill"><img src="images/PaintNET.png" alt="Paint.NET"><span>Paint.NET</span></div>
           <div class="skill"><img src="images/PowerPoint.png" alt="PowerPoint"><span>PowerPoint</span></div>
-          <div class="skill"><img src="images/SQL.png" alt="SQL"><span>SQL</span></div>
           <div class="skill"><img src="images/TypeScript.png" alt="TypeScript"><span>TypeScript</span></div>
           <div class="skill"><img src="images/Unbutu.png" alt="Ubuntu"><span>Ubuntu</span></div>
           <div class="skill"><img src="images/VisualStudio.png" alt="Visual Studio"><span>Visual Studio</span></div>
@@ -226,6 +260,15 @@
     </section>
   </main>
 
+  <div id="project-modal" class="modal" style="display:none;">
+    <div class="modal-content">
+      <span class="close" id="close-modal">&times;</span>
+      <div id="modal-body">
+        
+      </div>
+    </div>
+  </div>
+
   <footer>
     <div class="wrap">© <span id="y"></span> Jake Soucy. Built with clean HTML/CSS/JS.</div>
   </footer>
@@ -233,7 +276,6 @@
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
 
-    // Intersection Observer for reveal
     const els = document.querySelectorAll('.reveal');
     const io = new IntersectionObserver((entries)=>{
       entries.forEach(e=>{
@@ -256,15 +298,6 @@
     // Initialize default text from data-en
     document.querySelectorAll('[data-en]').forEach(el=>{
       el.textContent = el.dataset.en;
-    });
-
-    // Light mode toggle
-    let lightMode = false;
-    const modeBtn = document.getElementById('modeToggle');
-    modeBtn.addEventListener('click', () => {
-      lightMode = !lightMode;
-      document.body.classList.toggle('light-mode', lightMode);
-      modeBtn.textContent = lightMode ? 'Dark' : 'Light';
     });
   </script>
 </body>
