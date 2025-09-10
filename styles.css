@@ -106,11 +106,11 @@ a:hover {
 .social img {
   width: 28px;
   height: 28px;
-  filter: grayscale(40%);
+  filter: hue-rotate(215deg) saturate(1) brightness(0.95);
 }
 
 .social a:hover img {
-  filter: none;
+  filter: hue-rotate(215deg) saturate(1) brightness(1.15);
 }
 
 .toggle-btn {
@@ -336,7 +336,7 @@ section h2 {
 .skill img {
   width: 36px;
   height: 36px;
-  opacity: .9;
+  filter: hue-rotate(315deg) saturate(1) brightness(1);
 }
 
 .skill span {
@@ -431,6 +431,7 @@ footer {
   width: 32px;
   height: 32px;
   margin-bottom: 0.5rem;
+  filter: hue-rotate(130deg) saturate(1) brightness(1.1);
 }
 .featured-skill span {
   font-weight: 600;
