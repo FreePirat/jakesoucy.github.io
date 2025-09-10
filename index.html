@@ -247,7 +247,7 @@
           <p><strong data-en="Email:" data-fr="Email :"></strong> <a href="mailto:Jakennik01@gmail.com">Jakennik01@gmail.com</a></p>
           <p><strong data-en="Based in:" data-fr="Basé à :"></strong> Dieppe / Moncton, NB, Canada</p>
         </div>
-        <form action="https://api.web3forms.com/submit" method="POST" aria-label="Contact form">
+        <form action="https://api.web3forms.com/submit" method="POST" aria-label="Contact form" id="contactForm" autocomplete="off">
           <input type="hidden" name="access_key" value="74a20f8a-ae66-4a7f-a0ee-477e14078a5d" />
           <label for="name" data-en="Your Name" data-fr="Votre nom"></label>
           <input id="name" name="name" type="text" required />
@@ -256,6 +256,7 @@
           <label for="message" data-en="Message" data-fr="Message"></label>
           <textarea id="message" name="message" required></textarea>
           <button type="submit" data-en="Send Message" data-fr="Envoyer"></button>
+          <div id="formFeedback" class="form-feedback" aria-live="polite"></div>
         </form>
       </div>
     </section>
@@ -307,6 +308,18 @@
     document.querySelectorAll('[data-en]').forEach(el=>{
       el.textContent = el.dataset.en;
     });
+
+    // Contact form instant feedback
+    const contactForm = document.getElementById('contactForm');
+    const formFeedback = document.getElementById('formFeedback');
+    if (contactForm) {
+      contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        formFeedback.textContent = isFrench ? "Message envoyé !" : "Message sent!";
+        contactForm.reset();
+        setTimeout(() => { formFeedback.textContent = ""; }, 4000);
+      });
+    }
   </script>
 </body>
 </html>
