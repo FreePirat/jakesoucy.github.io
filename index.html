@@ -5,6 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jake Soucy || Software Engineer</title>
   <link rel="stylesheet" href="styles.css">
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    // Replace 'G-XXXXXXXXXX' with your actual Google Analytics measurement ID
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Jake Soucy - Software Engineer specializing in C++, JavaScript, and SQL. Recent NBCC graduate with experience in web development, game engines, and bilingual applications.">
+  <meta name="keywords" content="Jake Soucy, Software Engineer, C++, JavaScript, SQL, Web Developer, NBCC, Moncton, New Brunswick">
+  <meta name="author" content="Jake Soucy">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Jake Soucy - Software Engineer">
+  <meta property="og:description" content="Software Engineer specializing in C++, JavaScript, and SQL. Building clean, user-friendly software and websites.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://freepirat.github.io/jakesoucy.github.io/">
+  <meta property="og:image" content="https://freepirat.github.io/jakesoucy.github.io/images/ThemeTussle.png">
 </head>
 <body>
   <header class="site-header">
@@ -12,9 +34,12 @@
       <div class="brand"><span class="dot" aria-hidden="true"></span> <span>Jake Soucy</span></div>
       <nav class="navlinks" aria-label="Primary">
         <a href="#about" data-en="About" data-fr="À propos"></a>
+        <a href="#education" data-en="Education" data-fr="Éducation"></a>
+        <a href="#certifications" data-en="Certifications" data-fr="Certifications"></a>
         <a href="#experience" data-en="Experience" data-fr="Expérience"></a>
         <a href="#projects" data-en="Projects" data-fr="Projets"></a>
         <a href="#skills" data-en="Skills" data-fr="Compétences"></a>
+        <a href="#testimonials" data-en="Testimonials" data-fr="Témoignages"></a>
         <a href="#contact" data-en="Contact" data-fr="Contact"></a>
       </nav>
       <div class="social" aria-label="Social links">
@@ -22,7 +47,7 @@
           <img src="images/linked.png" alt="LinkedIn" />
         </a>
         <a href="https://github.com/FreePirat" target="_blank" aria-label="GitHub">
-          <img id="GitHub" src="images/octocat.png" alt="GitHub" />
+          <img id="GitHub" src="images/Github.png" alt="GitHub" />
         </a>
       </div>
       <div class="toggles">
@@ -62,12 +87,88 @@
       </div>
     </section>
 
+    <!-- Education -->
+    <section id="education">
+      <div class="wrap reveal">
+        <h2 data-en="Education" data-fr="Éducation"></h2>
+        <p class="kicker" data-en="My academic background and continuous learning journey." data-fr="Mon parcours académique et d'apprentissage continu."></p>
+        <div class="education-grid">
+          <article class="education-card">
+            <div class="education-header">
+              <h3 data-en="Computer Programming and Analysis" data-fr="Programmation et Analyse Informatique"></h3>
+              <div class="institution">New Brunswick Community College (NBCC)</div>
+              <div class="date">2022 - 2024</div>
+            </div>
+            <div class="education-details">
+              <p data-en="Comprehensive program covering software development, database management, and system analysis."
+                 data-fr="Programme complet couvrant le développement logiciel, la gestion de bases de données et l'analyse de systèmes."></p>
+              <div class="coursework">
+                <h4 data-en="Key Coursework:" data-fr="Cours principaux :"></h4>
+                <ul>
+                  <li data-en="Object-Oriented Programming (C++, Java)" data-fr="Programmation Orientée Objet (C++, Java)"></li>
+                  <li data-en="Database Design & SQL" data-fr="Conception de Base de Données & SQL"></li>
+                  <li data-en="Web Development (HTML, CSS, JavaScript)" data-fr="Développement Web (HTML, CSS, JavaScript)"></li>
+                  <li data-en="Software Engineering Principles" data-fr="Principes d'Ingénierie Logicielle"></li>
+                  <li data-en="Mobile Application Development" data-fr="Développement d'Applications Mobiles"></li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications">
+      <div class="wrap reveal">
+        <h2 data-en="Certifications & Achievements" data-fr="Certifications & Réalisations"></h2>
+        <p class="kicker" data-en="Professional certifications and notable achievements." data-fr="Certifications professionnelles et réalisations notables."></p>
+        <div class="certifications-grid">
+          <article class="cert-card">
+            <div class="cert-icon">🎓</div>
+            <h3 data-en="NBCC Graduate - Computer Programming" data-fr="Diplômé NBCC - Programmation Informatique"></h3>
+            <p class="cert-issuer">New Brunswick Community College</p>
+            <p class="cert-date">2024</p>
+          </article>
+          <article class="cert-card">
+            <div class="cert-icon">🏆</div>
+            <h3 data-en="Top 3 Sales Performance" data-fr="Top 3 Performance de Vente"></h3>
+            <p class="cert-issuer">NQX - Bell Mobility</p>
+            <p class="cert-date">2025</p>
+          </article>
+          <article class="cert-card">
+            <div class="cert-icon">🔒</div>
+            <h3 data-en="Government Security Clearance" data-fr="Autorisation de Sécurité Gouvernementale"></h3>
+            <p class="cert-issuer">Government of Canada</p>
+            <p class="cert-date">2023-2024</p>
+          </article>
+          <article class="cert-card">
+            <div class="cert-icon">🌐</div>
+            <h3 data-en="Bilingual Professional" data-fr="Professionnel Bilingue"></h3>
+            <p class="cert-issuer">English/French Fluency</p>
+            <p class="cert-date">Native</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <!-- Experience -->
     <section id="experience">
       <div class="wrap reveal">
         <h2 data-en="Experience" data-fr="Expérience"></h2>
         <p class="kicker" data-en="Highlights of where I’ve worked." data-fr="Quelques points forts de mon expérience professionnelle."></p>
         <div class="timeline">
+          <article class="job">
+            <div class="row">
+              <h3 data-en="NQX — Digital Client Experience" data-fr="NQX — Expérience client numérique"></h3>
+              <div class="meta">Aug 2025 – Present • Moncton, NB</div>
+            </div>
+            <ul>
+              <li data-en="Assisted clients from large companies in accessing their billing accounts, ensuring a seamless experience." data-fr="Aidé les clients de grandes entreprises à accéder à leurs comptes de facturation, garantissant une expérience fluide."></li>
+              <li data-en="Provided technical support and guidance for navigating Bell's Digital Portal, enhancing user engagement." data-fr="Fourniture de support technique et d'orientation pour naviguer dans le portail numérique de Bell, améliorant l'engagement des utilisateurs."></li>
+              <li data-en="Maintained professional conversations while resolving issues, fostering strong client relationships." data-fr="Maintenu des conversations professionnelles tout en résolvant des problèmes, favorisant de solides relations avec les clients."></li>
+            </ul>
+          </article>
           <article class="job">
             <div class="row">
               <h3 data-en="NQX — Sales Representative" data-fr="NQX — Représentant des ventes"></h3>
@@ -240,6 +341,34 @@
       </div>
     </section>
 
+    <!-- Testimonials -->
+    <section id="testimonials">
+      <div class="wrap reveal">
+        <h2 data-en="Testimonials" data-fr="Témoignages"></h2>
+        <p class="kicker" data-en="What colleagues and supervisors say about working with me." data-fr="Ce que disent mes collègues et superviseurs sur le travail avec moi."></p>
+        <div class="testimonials-grid">
+          <article class="testimonial-card">
+            <div class="quote">"</div>
+            <p data-en="Jake demonstrated exceptional technical skills and professionalism during his time with our team. His bilingual capabilities and attention to detail made him invaluable for our general work and projects."
+               data-fr="Jake a démontré des compétences techniques et un professionnalisme exceptionnels pendant son temps avec notre équipe de développement web. Ses capacités bilingues et son attention aux détails l'ont rendu indispensable pour notre projet de portail gouvernemental."></p>
+            <div class="testimonial-author">
+              <strong>Marcel Hebert</strong>
+              <span>Fisheries and Oceans Canada</span>
+            </div>
+          </article>
+          <article class="testimonial-card">
+            <div class="quote">"</div>
+            <p data-en="Hats off to all GEX students but I will say, Jake this was a homerun and top of my list. That is saying a lot because this year’s Capstone games were way beyond expectations. Super cool asthetic, really awesome characters and stages. I think this might have been our very first fighting game we’ve had as well."
+               data-fr="Le projet de jeu de combat C++ de Jake a mis en évidence des concepts de programmation avancés et une résolution créative de problèmes. Son code était bien structuré et sa présentation était professionnelle et engageante."></p>
+            <div class="testimonial-author">
+              <strong>Chris Cusack</strong>
+              <span>NBCC</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <!-- Contact -->
     <section id="contact">
       <div class="wrap contact reveal">
@@ -287,15 +416,30 @@
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
 
+    // Enhanced Intersection Observer for reveal animations
     const els = document.querySelectorAll('.reveal');
     const io = new IntersectionObserver((entries)=>{
       entries.forEach(e=>{
-        if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+        if(e.isIntersecting){ 
+          e.target.classList.add('in'); 
+          io.unobserve(e.target);
+          
+          // Track section views for analytics
+          if (typeof gtag !== 'undefined') {
+            const sectionId = e.target.id || e.target.closest('section')?.id;
+            if (sectionId) {
+              gtag('event', 'section_view', {
+                'section_name': sectionId,
+                'engagement_time_msec': 1000
+              });
+            }
+          }
+        }
       });
     }, {threshold:.15});
     els.forEach(el=>io.observe(el));
 
-    // Language toggle
+    // Language toggle with analytics tracking
     let isFrench = false;
     const langBtn = document.getElementById('langToggle');
     langBtn.addEventListener('click', () => {
@@ -304,6 +448,13 @@
       document.querySelectorAll('[data-en]').forEach(el=>{
         el.textContent = isFrench ? el.dataset.fr : el.dataset.en;
       });
+      
+      // Track language changes
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'language_change', {
+          'language': isFrench ? 'french' : 'english'
+        });
+      }
     });
 
     // Initialize default text from data-en
@@ -311,7 +462,7 @@
       el.textContent = el.dataset.en;
     });
 
-    // Contact form instant feedback
+    // Enhanced contact form with analytics
     const contactForm = document.getElementById('contactForm');
     const formFeedback = document.getElementById('formFeedback');
     if (contactForm) {
@@ -320,8 +471,92 @@
         formFeedback.textContent = isFrench ? "Message envoyé !" : "Message sent!";
         contactForm.reset();
         setTimeout(() => { formFeedback.textContent = ""; }, 4000);
+        
+        // Track form submissions
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'form_submit', {
+            'form_name': 'contact_form'
+          });
+        }
       });
     }
+
+    // Track external link clicks
+    document.addEventListener('click', function(e) {
+      if (e.target.tagName === 'A' && e.target.href && e.target.target === '_blank') {
+        if (typeof gtag !== 'undefined') {
+          const linkText = e.target.textContent || e.target.getAttribute('aria-label') || 'Unknown';
+          gtag('event', 'click', {
+            'event_category': 'outbound',
+            'event_label': linkText,
+            'transport_type': 'beacon'
+          });
+        }
+      }
+    });
+
+    // Track resume downloads
+    document.querySelectorAll('a[href*="Resume"], a[href*="CV"]').forEach(link => {
+      link.addEventListener('click', function() {
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'file_download', {
+            'file_name': 'JakeSoucyResume.pdf',
+            'file_extension': 'pdf'
+          });
+        }
+      });
+    });
+
+    // Smooth scroll for navigation links with analytics
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth'
+          });
+          
+          // Track navigation clicks
+          if (typeof gtag !== 'undefined') {
+            gtag('event', 'navigation_click', {
+              'section': this.getAttribute('href').substring(1)
+            });
+          }
+        }
+      });
+    });
+
+    // Add timeline animation on scroll
+    const timelineJobs = document.querySelectorAll('.job');
+    const timelineObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateX(0)';
+        }
+      });
+    }, { threshold: 0.3 });
+
+    timelineJobs.forEach(job => {
+      job.style.opacity = '0';
+      job.style.transform = 'translateX(-20px)';
+      job.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      timelineObserver.observe(job);
+    });
+
+    // Performance tracking
+    window.addEventListener('load', function() {
+      if (typeof gtag !== 'undefined' && 'performance' in window) {
+        const perfData = performance.getEntriesByType('navigation')[0];
+        const loadTime = Math.round(perfData.loadEventEnd - perfData.loadEventStart);
+        
+        gtag('event', 'timing_complete', {
+          'name': 'load',
+          'value': loadTime
+        });
+      }
+    });
   </script>
 </body>
 </html>
