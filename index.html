@@ -61,11 +61,9 @@
             <a class="btn" href="JakeSoucyResume.pdf" download data-en="Download Résumé" data-fr="Télécharger le CV"></a>
           </div>
         </div>
-        <div class="video">
-          <video controls autoplay muted playsinline poster="images/ThemeTussle.png">
-            <source src="Theme_Tussle_Trailer.mp4" type="video/mp4" />
-          </video>
-        </div>
+        <a href="https://www.youtube.com/@PiratDiment" target="_blank" aria-label="YouTube Channel">
+          <img src="images/Jake.jpg" alt="Jake Soucy" />
+        </a>
       </div>
     </section>
 
@@ -138,6 +136,18 @@
             <h3 data-en="Bilingual Professional" data-fr="Professionnel Bilingue"></h3>
             <p class="cert-issuer">English/French Fluency</p>
             <p class="cert-date">Native</p>
+          </article>
+          <article class="cert-card">
+            <div class="cert-icon">🎮</div>
+            <h3 data-en="Developed Fighting Game" data-fr="Développé un Jeu de Combat"></h3>
+            <p class="cert-issuer">Theme Tussle C++ Developer</p>
+            <p class="cert-date">2024</p>
+          </article>
+          <article class="cert-card">
+            <div class="cert-icon">🖥️</div>
+            <h3 data-en="Full-Stack Developer" data-fr="Développeur Full-Stack"></h3>
+            <p class="cert-issuer">Multiple Live Web Applications</p>
+            <p class="cert-date">2024-Present</p>
           </article>
         </div>
       </div>
@@ -228,7 +238,7 @@
               Your browser does not support the video tag.
             </video>
             <div class="content">
-              <h3 data-en="RPG Project (Ascension) — Java, Unity, Team Management" data-fr="Projet RPG (Ascension) — Java, Unity, Management D'equipe"></h3>
+              <h3 data-en="RPG Project (Ascension) — C#, Unity, Team Management" data-fr="Projet RPG (Ascension) — C#, Unity, Management D'equipe"></h3>
               <p data-en="A work-in-progress RPG built by a team I'm currently leading. Demo video below." data-fr="Un RPG en cours avec des mécaniques et une interface personnalisées. Démo ci-dessous."></p>
             </div>
             <a class="block" href="https://github.com/FreePirat/RPGProject" target="_blank" data-en="View on GitHub" data-fr="Voir sur GitHub"></a>
@@ -405,6 +415,89 @@
         </ul>
       </div>
     </section>
+
+    <!-- Other Websites -->
+    <section id="other-websites">
+      <div class="wrap reveal">
+        <h2 data-en="Other Websites" data-fr="Autres Sites Web"></h2>
+        <p class="kicker" data-en="Additional web projects and applications I've built." data-fr="Projets web et applications supplémentaires que j'ai créés."></p>
+        <div class="websites-container">
+          <button class="website-nav-btn website-nav-prev" id="prevWebsite" aria-label="Previous website">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <button class="website-nav-btn website-nav-next" id="nextWebsite" aria-label="Next website">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="websites-scroll" id="websitesScroll">
+            <article class="website-card" onclick="window.open('https://freepirat.github.io/Tiermaker2/', '_blank')">
+              <div class="website-image">
+                <img src="images/TierMaker.png" alt="Tier Maker Website" loading="lazy">
+              </div>
+              <div class="website-content">
+                <h3 data-en="Tier Maker 2" data-fr="Tier Maker 2"></h3>
+                <p data-en="Allows users to create and share tier lists for various topics." data-fr="Permet aux utilisateurs de créer et de partager des listes de niveaux pour divers sujets."></p>
+                <div class="website-tech">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                  <span>JSON</span>
+                </div>
+              </div>
+            </article>
+            
+            <article class="website-card" onclick="window.open('https://freepirat.github.io/ThemeTussleWebsite/', '_blank')">
+              <div class="website-image">
+                <img src="images/ThemeTussleWebsite.png" alt="Theme Tussle Website" loading="lazy">
+              </div>
+              <div class="website-content">
+                <h3 data-en="Theme Tussle Website" data-fr="Site Web Theme Tussle"></h3>
+                <p data-en="This is a website to give more information and details on the fighting game I've created, Theme Tussle. This website will go over many important features, such as details of the characters, stages, stories, modes, and even the attacks of the characters in the future." data-fr="Ce site web est destiné à donner plus d'informations et de détails sur le jeu de combat que j'ai créé, Theme Tussle. Ce site web abordera de nombreuses fonctionnalités importantes, telles que les détails des personnages, des scènes, des histoires, des modes et même des attaques des personnages à l'avenir."></p>
+                <div class="website-tech">
+                  <span>HTML</span>
+                  <span>JSON</span>
+                  <span>JavaScript</span>
+                  <span>GitHub Pages</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="website-card" onclick="window.open('https://freepirat.github.io/FunWithGambling/', '_blank')">
+              <div class="website-image">
+                <img src="images/FunWithGambling.png" alt="Fun With Gambling Website" loading="lazy">
+              </div>
+              <div class="website-content">
+                <h3 data-en="Fun With Gambling" data-fr="Fun With Gambling"></h3>
+                <p data-en="Interactive gambling simulation website with multiple games, statistics tracking, and responsive design." data-fr="Site web de simulation de jeux d'argent interactif avec plusieurs jeux, suivi des statistiques et design réactif."></p>
+                <div class="website-tech">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="website-card" onclick="window.open('#', '_blank')">
+              <div class="website-image">
+                <img src="images/OlderIcons/Web.png" alt="Upcoming Project" loading="lazy">
+              </div>
+              <div class="website-content">
+                <h3 data-en="Upcoming Project" data-fr="Projet à Venir"></h3>
+                <p data-en="New web application currently in development. Stay tuned for more details!" data-fr="Nouvelle application web actuellement en développement. Restez à l'écoute pour plus de détails !"></p>
+                <div class="website-tech">
+                  <span>React</span>
+                  <span>Node.js</span>
+                  <span>MongoDB</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
@@ -542,6 +635,65 @@
       job.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
       timelineObserver.observe(job);
     });
+
+    // Website navigation functionality
+    const websitesScroll = document.getElementById('websitesScroll');
+    const prevBtn = document.getElementById('prevWebsite');
+    const nextBtn = document.getElementById('nextWebsite');
+    
+    if (websitesScroll && prevBtn && nextBtn) {
+      let currentIndex = 0;
+      const websiteCards = websitesScroll.querySelectorAll('.website-card');
+      const totalCards = websiteCards.length;
+      
+      function updateButtonStates() {
+        prevBtn.disabled = currentIndex === 0;
+        nextBtn.disabled = currentIndex >= totalCards - 1;
+      }
+      
+      function scrollToWebsite(index) {
+        if (index >= 0 && index < totalCards) {
+          const card = websiteCards[index];
+          const scrollLeft = card.offsetLeft - (websitesScroll.offsetWidth - card.offsetWidth) / 2;
+          websitesScroll.scrollTo({
+            left: scrollLeft,
+            behavior: 'smooth'
+          });
+          currentIndex = index;
+          updateButtonStates();
+          
+          // Track navigation for analytics
+          if (typeof gtag !== 'undefined') {
+            gtag('event', 'website_navigation', {
+              'direction': index > currentIndex ? 'next' : 'prev',
+              'website_index': index
+            });
+          }
+        }
+      }
+      
+      prevBtn.addEventListener('click', () => {
+        scrollToWebsite(currentIndex - 1);
+      });
+      
+      nextBtn.addEventListener('click', () => {
+        scrollToWebsite(currentIndex + 1);
+      });
+      
+      // Update button states on manual scroll
+      websitesScroll.addEventListener('scroll', () => {
+        const scrollLeft = websitesScroll.scrollLeft;
+        const cardWidth = websiteCards[0].offsetWidth + 32; // card width + gap
+        const newIndex = Math.round(scrollLeft / cardWidth);
+        if (newIndex !== currentIndex && newIndex >= 0 && newIndex < totalCards) {
+          currentIndex = newIndex;
+          updateButtonStates();
+        }
+      });
+      
+      // Initialize button states
+      updateButtonStates();
+    }
 
     // Performance tracking
     window.addEventListener('load', function() {
