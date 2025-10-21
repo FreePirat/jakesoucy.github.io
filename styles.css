@@ -566,6 +566,11 @@ footer {
     grid-template-columns: 1fr;
   }
 
+  .hero-grid img {
+    margin: 0 auto;
+    width: 60%;
+  }
+
   .contact {
     grid-template-columns: 1fr;
   }
