@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://freepirat.github.io/jakesoucy.github.io/sitemap.xml
